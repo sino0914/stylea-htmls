@@ -225,15 +225,6 @@ window.addEventListener("touchstart", handleChocolateTap);
   });
 
 
-  const toggleFun = document.getElementById("toggleFun");
-
-  toggleFun.addEventListener("click", () => {
-  const tempIndex = currentAudioIndex - 1;
-  if(tempIndex < 0)tempIndex = audioFiles.length - 1;
-  audioPlayers[tempIndex].currentTime = 0; // 從頭播放
-  audioPlayers[tempIndex].play();
-  });
-
   // ===============================
   // 動畫
   // ===============================
